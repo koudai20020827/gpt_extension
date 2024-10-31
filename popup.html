@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Text Sender v15</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007AFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:active {
+            background-color: #005BBB;
+            transform: scale(0.95);
+        }
+        #logArea {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #333;
+            background: #f0f0f0;
+            border-radius: 8px;
+            padding: 5px;
+            height: 150px;
+            overflow-y: auto;
+        }
+        #versionInfo {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #555;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>GPT Text Sender v15</h1>
+    <textarea id="inputText" placeholder="Enter your message here..."></textarea>
+    <button id="requestButton">Send to GPT</button>
+    <div id="logArea"></div>  <!-- Enhanced Log output area -->
+    <div id="versionInfo">Version 15</div>
+    <script src="popup_v15.js"></script>
+</body>
+</html>

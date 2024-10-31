@@ -1,0 +1,27 @@
+
+{
+  "manifest_version": 3,
+  "name": "GPT Text Sender v15",
+  "version": "1.0",
+  "description": "Send text to GPT chatbox with enhanced logging for every step.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "https://chatgpt.com/c/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/c/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
